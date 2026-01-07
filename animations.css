@@ -1,0 +1,29 @@
+.MenuOpt {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+/* Linha */
+.MenuOpt::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 3px solid #e2ba49;
+
+    /* animação */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease-in, transform-origin 0s 0.35s;
+}
+
+/* Hover */
+.MenuOpt:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+/*Animação Carrosel*/

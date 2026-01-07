@@ -1,0 +1,129 @@
+html {
+  scrollbar-width: none;     
+}
+
+html::-webkit-scrollbar {
+  display: none;           
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.LogoIMG {
+    height: 80px;
+    margin: 20px;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #000, #0b4625);
+    box-shadow: 0 10px 4px #0b4625;
+    padding: 0 50px;
+    position: relative;
+}
+
+.Menu {
+    display: flex;
+    list-style: none;
+}
+
+.MenuOpt {
+
+    padding: 0 5px -5px 5px;
+    margin: 0 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.Banner {
+    height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(IMG/TempBanner.png);
+    box-shadow: 0 3px 5px #000000;
+}
+
+.BannerInfo {
+    font-family: 'Farsan' !important;
+    width: 450px;
+    color: white;
+}
+
+
+.BannerText>h1 {
+    font-size: 50px;
+    font-family: 'Farsan' !important;
+}
+
+.BannerText>p {
+    font-size: 30px;
+    font-family: 'Farsan' !important;
+
+}
+
+.BannerInfo>a {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Farsan' !important;
+    background: linear-gradient(135deg, #d4bc6b 0%, #e2ba49 40%, #c89d2f 60%, #9f7a1f 100%);
+    text-shadow: 5px 5px 10px #3a3a3a  ;
+}
+
+.BannerBTN {
+    margin: 10px 0;
+}
+
+.SobreNos {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Historia {
+    width: 800px;
+    text-align: center;
+    margin: 50px;
+}
+
+.Historia>h1 {
+    margin-bottom: 50px;
+}
+
+.Historia>p {
+    font-size: 20px;
+}
+
+.Video{
+    width: 100%;
+    padding: 50px;
+}
+
+.VIDApresentacao{
+    height: 550px;
+    width: auto;
+}
