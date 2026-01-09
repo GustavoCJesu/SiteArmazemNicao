@@ -11,11 +11,14 @@ html::-webkit-scrollbar {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
+    font-weight: 300;
 }
 
 body {
     font-family: 'Roboto';
 }
+
+/* Pagina Home */
 
 .LogoIMG {
     height: 80px;
@@ -26,9 +29,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background: linear-gradient(to bottom, #000, #0b4625); */
     background-color: #1a1a1a;
-    box-shadow: 0 10px 4px #1a1a1a;
+    box-shadow: 0 3px 4px #1a1a1a;
     padding: 0 50px;
     position: relative;
 }
@@ -65,7 +67,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(IMG/TempBanner.png);
-    box-shadow: 0 3px 5px #000000;
+    box-shadow: 0 3px 5px #1a1a1a;
 }
 
 .BannerInfo {
@@ -87,21 +89,23 @@ body {
     margin: 20px 0;
 }
 
-.BannerInfo>a {
+.BannerBTN {
+    margin: 10px 0;
+    font-size: 25px !important;
     font-size: 30px;
     color: white;
     font-weight: 200;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border-radius: 5px;
     display: inline-block;
     /* background: linear-gradient(135deg, #d4bc6b 0%, #e2ba49 40%, #c89d2f 60%, #9f7a1f 100%); */
     background-color: #c89d2f;
-    
+    transition: transform 0.3s ease;
 }
 
-.BannerBTN {
-    margin: 10px 0;
+.BannerBTN:hover {
+  transform: scale(1.08);
 }
 
 .SobreNos {
@@ -113,7 +117,7 @@ body {
 }
 
 .Historia {
-    width: 1400px;
+    width: 1200px;
     text-align: center;
     margin: 50px;
 }
@@ -126,7 +130,7 @@ body {
 .Historia>p {
     font-size: 20px;
     font-weight: 300;
-    line-height: 1.8;
+    line-height: 2;
 }
 
 .Video {
@@ -160,18 +164,18 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation: spin 20s infinite linear;
+    animation: spin 25s infinite linear;
 
 }
 
 .card {
     flex: 0 0 5em;
     height: 5em;
-    background: cornflowerblue;
     font-size: 3rem;
     border-radius: .2em;
     text-align: center;
     align-content: center;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .carroselimg {
@@ -205,15 +209,17 @@ body {
     justify-content: center;
 }
 
-.InpContatenos>.inpContato {
+.inpContato {
     display: inline-block;
     padding: 20px;
     width: 80%;
     margin: 10px 0;
+    font-size: 20px;
 }
 
 .btnEnviar {
     padding: 20px 50px;
+    font-size: 20px;
 }
 
 .InpMensagem {
@@ -224,6 +230,9 @@ body {
     font-family: 'Roboto';
     text-align: center;
     margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .RedesSociais>h1 {
@@ -232,7 +241,6 @@ body {
 }
 
 .Rede{
-    text-align: left;
     margin: 20px;
     font-weight: 200;
 }
@@ -253,3 +261,48 @@ body {
 .SocialIco{
     font-size: 40px;
 }
+
+
+
+.footer{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #1a1a1a;
+}
+
+.footerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em
+}
+
+.footerContent > img{
+    width: 100px;
+    height: 100px;
+}
+
+.footerContent > a{
+    color:white;
+    text-decoration: none;
+}
+
+.IconSocial{
+    text-decoration: none;
+    color: white;
+}
+
+/* Pagina Home - Fim*/
+
+/* Pagina Serviços */
