@@ -1,0 +1,1390 @@
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Roboto';
+    overflow-x: hidden;
+}
+
+.returnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    padding: 10px;
+    background-color: #c89d2f;
+    border-radius: 100%;
+    color: #fff;
+
+    z-index: 5;
+}
+
+/* Pagina Home */
+
+.LogoIMG {
+    height: 80px;
+    margin: 20px;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 0 50px;
+    position: relative;
+}
+
+.Menu {
+    display: flex;
+    list-style: none;
+}
+
+.MenuOpt {
+
+    padding: 0 5px -5px 5px;
+    margin: 0 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.MenuOpt>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.Banner {
+    height: calc(100vh - 124px);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../IMG/Banner.jpg');
+}
+
+.BannerInfo {
+    font-family: 'Farsan' !important;
+    width: 700px;
+    color: white;
+}
+
+
+.BannerText>h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.BannerText>p {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+.BannerBTN {
+    margin: 10px 0;
+    font-size: 25px !important;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #c89d2f;
+    transition: transform 0.3s ease;
+}
+
+.BannerBTN:hover {
+    transform: scale(1.08);
+}
+
+.zoom:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease;
+}
+
+.SobreNos {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Historia {
+    width: 1200px;
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Historia>h2 {
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-family: 'Farsan';
+    font-size: 40px;
+    color: #c89d2f;
+}
+
+.Historia>p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.Video {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.VIDApresentacao {
+    height: 600px;
+    width: 70vw;
+    /* box-shadow: 0 0 10px black; */
+}
+
+/* Estilo Carrossel */
+
+.carrosel {
+    width: 80%;
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    margin-bottom: 50px;
+    box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, .4);
+    overflow: hidden;
+}
+
+.carrosel::-webkit-scrollbar {
+    display: none;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 35s infinite linear;
+
+}
+
+.card {
+    flex: 0 0 8em;
+    height: 5em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+.carroselimg {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes spin {
+    from {
+        translete: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.contatenos {
+    display: flex;
+    justify-content: center;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px;
+}
+
+.InpContatenos {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inpContato {
+    display: inline-block;
+    padding: 20px;
+    width: 80%;
+    margin: 10px 0;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+#contador {
+    align-self: flex-start !important;
+}
+
+.btnEnviar {
+    padding: 20px 50px;
+    font-size: 20px;
+    transition: 0.3s ease;
+    font-family: 'Roboto';
+    background-color: #c89d2f;
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+.InpMensagem {
+    height: 300px;
+}
+
+.RedesSociais {
+    font-family: 'Roboto';
+    text-align: center;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Contatenos {
+    font-family: 'Farsan';
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.containerContatenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.Rede {
+    margin: 20px;
+    font-weight: 200;
+}
+
+.Rede>p>a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Rede>p {
+    display: flex;
+    justify-content: left;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 200;
+}
+
+.Rede>span {
+    font-size: 20px;
+}
+
+.SocialIco {
+    font-size: 20px;
+}
+
+
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: #1a1a1a;
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em
+}
+
+.footerContent>img {
+    width: 100px;
+    height: 100px;
+}
+
+.footerContent>a {
+    color: white;
+    text-decoration: none;
+}
+
+.IconSocial {
+    text-decoration: none;
+    color: white;
+}
+
+/* Pagina Home - Fim*/
+
+/* Pagina Serviços */
+
+.BannerServiços {
+    height: calc(100vh - 124px);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-image: url('../IMG/BannerServicos.png');
+    box-shadow: 0 3px 5px #1a1a1a;
+}
+
+.BannerInfoServiços {
+    font-family: 'Farsan' !important;
+    width: 900px;
+    color: white;
+}
+
+
+.BannerTextServiços>h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 20px 0;
+
+}
+
+.BannerTextServiços>p {
+    font-size: 30px;
+    font-weight: 200;
+    margin: 20px 0;
+    text-shadow: 0 0 10px #000;
+}
+
+.BannerBTNServiços {
+    margin: 10px 0;
+    font-size: 25px !important;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    padding: 15px 60px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #c89d2f;
+    transition: transform 0.3s ease;
+    align-items: end;
+}
+
+.BannerBTN:hover {
+    transform: scale(1.08);
+}
+
+.TituloServico {
+    padding: 40px;
+    font-size: 40px;
+}
+
+.alinhamentoDireito {
+    display: flex;
+    justify-content: end;
+}
+
+.CardServico {
+    width: 70%;
+    margin: 20px 0;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    align-items: center;
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    box-shadow: 5px 5px 10px 4px #6d6d6d;
+}
+
+.SevDescricao {
+    padding: 0 30px;
+}
+
+.SevDescricao>h2 {
+    font-size: 30px;
+    font-weight: 350;
+    color: #c89d2f
+}
+
+.SevDescricao>p {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.btnSaibaMaisServicos {
+    padding: 20px 50px;
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #c89d2f;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 3px;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.imgCard {
+    height: 300px;
+    width: 35%;
+}
+
+/* estado inicial */
+.CardServico.hidden {
+    opacity: 0;
+}
+
+/* direções */
+.CardServico.from-left.hidden {
+    transform: translateX(-150px);
+}
+
+.CardServico.from-right.hidden {
+    transform: translateX(150px);
+}
+
+/* estado visível */
+.CardServico.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* CSS pagina contatenos */
+.BannerContatos {
+    height: calc(100vh - 124px);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../IMG/BannerContatos.webp');
+    box-shadow: 0 3px 5px #1a1a1a;
+}
+
+.HorariosFuncionamento {
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HorariosFuncionamento>h2 {
+    font-size: 40px;
+    border-radius: 100px;
+    display: inline;
+    padding: 0 15px;
+    color: #594a47;
+    margin-bottom: 3rem;
+}
+
+.ContainerHorarios {
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerHorarios>img {
+    width: 300px;
+}
+
+.Horario {
+    text-align: center;
+    height: 15rem;
+    width: 25rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: #4e4e4e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Horario>h2 {
+    font-weight: 600;
+    color: #594a47;
+}
+
+.Horario>p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.linha>img {
+    width: 1500px;
+    height: 110px;
+}
+
+.Localização {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.Localização>h2 {
+    font-size: 40px;
+    color: #594a47;
+}
+
+
+/* Style Sobre Nos */
+
+.BoxHistoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.BoxHistoria>h2 {
+    font-size: 40px;
+    color: #c89d2f;
+    font-weight: 800;
+    font-family: 'Farsan';
+}
+
+.Historia {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.IMGHistoria>img {
+    height: 400px;
+}
+
+.TextoHistoria {
+    padding: 0 100px;
+}
+
+.TextoHistoria>p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.BoxSobreNos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.MVV {
+    text-align: center;
+    font-size: 19px;
+    padding: 0 3rem;
+    width: 33%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 9rem;
+    padding: 2rem;
+}
+
+.MVV>p {
+    text-align: justify;
+    font-weight: 350;
+    color: #594a47
+}
+
+.container>img {
+    width: 20rem;
+}
+
+.bannerSobreNos>img {
+    height: 100%;
+    width: 100%;
+}
+
+/* CSS pagina contatenos */
+.BannerContatos {
+    height: calc(100vh - 124px);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../IMG/BannerContatos.webp');
+    box-shadow: 0 3px 5px #1a1a1a;
+}
+
+.HorariosFuncionamento {
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HorariosFuncionamento>h2 {
+    font-size: 40px;
+    border-radius: 100px;
+    display: inline;
+    padding: 0 15px;
+    color: #594a47;
+    margin-bottom: 3rem;
+}
+
+.ContainerHorarios {
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerHorarios>img {
+    width: 300px;
+}
+
+.Horario {
+    text-align: center;
+    height: 15rem;
+    width: 25rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: #4e4e4e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Horario>h2 {
+    font-weight: 600;
+    color: #594a47;
+}
+
+.Horario>p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.linha>img {
+    width: 1500px;
+    height: 110px;
+}
+
+.Localização {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.Localização>h2 {
+    font-size: 40px;
+    color: #594a47;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+    .LogoIMG {
+        height: 70px;
+        margin: 70px;
+        margin: 1rem;
+    }
+
+    .Header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1a1a1a;
+        position: relative;
+    }
+
+    .Menu {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MenuOpt {
+
+        padding: 0 5px -5px 5px;
+        margin: 0 10px;
+        color: white;
+        font-weight: 500;
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+    }
+
+    .MenuOpt>a {
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        padding: .1rem;
+    }
+
+    .Banner {
+        height: auto;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../IMG/Banner.jpg');
+        text-align: center;
+    }
+
+    .BannerInfo {
+        font-family: 'Farsan' !important;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+
+    .BannerText>h1 {
+        font-size: 25px;
+        font-weight: 300;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .BannerText>p {
+        font-size: 20px;
+        font-weight: 200;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .BannerBTN {
+        margin: 10px 0;
+        font-size: 25px !important;
+        font-size: 30px;
+        color: white;
+        font-weight: 200;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #c89d2f;
+        transition: transform 0.3s ease;
+    }
+
+    .BannerBTN:hover {
+        transform: scale(1.08);
+    }
+
+    .zoom:hover {
+        transform: scale(1.08);
+        transition: transform 0.3s ease;
+    }
+
+    .SobreNos {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Historia {
+        width: auto;
+        text-align: center;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Historia>h2 {
+        margin-bottom: 20px;
+        font-weight: 800;
+        font-family: 'Farsan';
+        font-size: 40px;
+        color: #c89d2f;
+    }
+
+    .Historia>p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 2;
+        text-align: justify;
+    }
+
+    #paragrafo2 {
+        display: none;
+    }
+
+    .Video {
+        width: 100vw;
+        padding-bottom: 20px;
+    }
+
+    .VIDApresentacao {
+        width: 90vw;
+        height: auto;
+        margin: 10px;
+    }
+
+    /* Estilo Carrossel */
+
+    .carrosel {
+        width: 90%;
+        display: flex;
+        overflow-x: auto;
+        gap: 1em;
+        margin-bottom: 20px;
+        box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, .4);
+        overflow: hidden;
+    }
+
+    .carrosel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .grupo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        animation: spin 35s infinite linear;
+
+    }
+
+    .card {
+        flex: 0 0 4em;
+        height: 2em;
+        font-size: 3rem;
+        border-radius: .2em;
+        text-align: center;
+        align-content: center;
+    }
+
+    .carroselimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    @keyframes spin {
+        from {
+            translete: 0;
+        }
+
+        to {
+            translate: -100%;
+        }
+    }
+
+    .contatenos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #2a2a2a;
+        color: white;
+        padding: 20px;
+    }
+
+    .InpContatenos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inpContato {
+        display: inline-block;
+        padding: 10px;
+        width: 90%;
+        font-size: 15px;
+        border-radius: 2px;
+    }
+
+    #contador {
+        align-self: flex-start !important;
+    }
+
+    .btnEnviar {
+        padding: 20px 50px;
+        font-size: 20px;
+        transition: 0.3s ease;
+        font-family: 'Roboto';
+        background-color: #c89d2f;
+        border: none;
+        color: white;
+        border-radius: 2px;
+    }
+
+    .InpMensagem {
+        height: 300px;
+    }
+
+    .RedesSociais {
+        font-family: 'Roboto';
+        text-align: center;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .containerContatenos {
+        margin: 1rem;
+    }
+
+    .Contatenos {
+        font-family: 'Farsan';
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .Rede {
+        margin: 0;
+        font-weight: 200;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .Rede>p>a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 15px;
+    }
+
+    .Rede>p>a>span {
+        display: none;
+    }
+
+    .Rede>p {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        text-align: left;
+        font-weight: 200;
+    }
+
+    .Rede>span {
+        display: none;
+        width: 0;
+    }
+
+    .SocialIco {
+        font-size: 40px;
+    }
+
+
+
+    .footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+        background-color: #1a1a1a;
+    }
+
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em
+    }
+
+    .footerContent>img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footerContent>a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .IconSocial {
+        text-decoration: none;
+        color: white;
+    }
+
+    /* Mobile Serviços */
+
+    .BannerServiços {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-image: url('../IMG/BannerServicos.png');
+        box-shadow: 0 3px 5px #1a1a1a;
+    }
+
+    .BannerInfoServiços {
+        font-family: 'Farsan' !important;
+        width: auto;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 10px;
+    }
+
+
+    .BannerTextServiços>h1 {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 20px 0;
+        text-align: left;
+    }
+
+    .BannerTextServiços>p {
+        font-size: 20px;
+        font-weight: 200;
+        margin: 20px 0;
+        text-shadow: 0 0 10px #000;
+        text-align: start;
+    }
+
+    .BannerBTNServiços {
+        margin: 10px 0;
+        font-size: 20px;
+        color: white;
+        font-weight: 200;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 5px;
+        display: inline-block;
+        background-color: #c89d2f;
+        transition: transform 0.3s ease;
+    }
+
+    .BannerBTN:hover {
+        transform: scale(1.08);
+    }
+
+    .TituloServico {
+        padding: 40px;
+        font-size: 40px;
+    }
+
+    .alinhamentoDireito {
+        display: flex;
+        justify-content: end;
+    }
+
+    .CardServico {
+        width: 90%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 10px;
+        align-items: center;
+        transition: opacity 0.9s ease, transform 0.9s ease;
+        box-shadow: 2px 2px 10px 2px #6d6d6d;
+    }
+
+    .SevDescricao {
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SevDescricao>h2 {
+        font-size: 15px;
+        font-weight: 350;
+        color: #c89d2f;
+    }
+
+    .SevDescricao>p {
+        font-size: 10px;
+        font-weight: 200;
+        display: none;
+        text-align: left;
+    }
+
+    .btnSaibaMaisServicos {
+        padding: 10px 20px;
+        color: #000;
+        text-decoration: none;
+        font-size: 15px;
+        background-color: #c89d2f;
+        display: inline-block;
+        margin: 10px 0;
+        border-radius: 3px;
+        color: #fff;
+        transition: 0.3s ease;
+    }
+
+    .imgCard {
+        height: auto;
+        width: 40%;
+    }
+
+    /* estado inicial */
+    .CardServico.hidden {
+        opacity: 0;
+    }
+
+    /* direções */
+    .CardServico.from-left.hidden {
+        transform: translateX(-150px);
+    }
+
+    .CardServico.from-right.hidden {
+        transform: translateX(150px);
+    }
+
+    /* estado visível */
+    .CardServico.show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Mobile Contate-nos */
+    .BannerContatos {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0;
+        background-image: url('../IMG/BannerContatos.webp');
+        box-shadow: 0 3px 5px #1a1a1a;
+    }
+
+    .HorariosFuncionamento {
+        text-align: center;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HorariosFuncionamento>h2 {
+        font-size: 30px;
+        border-radius: 100px;
+        display: inline;
+        padding: 0 15px;
+        color: #594a47;
+        margin-bottom: 3rem;
+    }
+
+    .ContainerHorarios {
+        display: flex;
+        gap: 20rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ContainerHorarios>img {
+        width: 300px;
+    }
+
+    .Horario {
+        text-align: center;
+        height: 15rem;
+        width: 25rem;
+        margin-top: 2rem;
+        border-radius: 5px;
+        background-color: #4e4e4e;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Horario>h2 {
+        font-weight: 600;
+        color: #594a47;
+    }
+
+    .Horario>p {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .linha {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    .linha>img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .Localização {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+
+    .Localização>h2 {
+        font-size: 40px;
+        color: #594a47;
+    }
+
+    .mapa{
+        width: 90%;
+        height: 15rem;
+    }
+
+    /* Mobile Sobre Nos */
+
+    .BoxHistoria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .BoxHistoria>h2 {
+        font-size: 40px;
+        color: #c89d2f;
+        font-weight: 800;
+        font-family: 'Farsan';
+    }
+
+    .Historia {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .IMGHistoria>img {
+        width: 90%;
+        height: auto;
+    }
+
+    .TextoHistoria {
+        padding: 0;
+    }
+
+    .TextoHistoria>p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .BoxSobreNos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .MVV {
+        text-align: center;
+        font-size: 19px;
+        padding: 1rem;
+        width: 100%
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 9rem;
+        padding: 2rem;
+    }
+
+    .MVV>p {
+        text-align: justify;
+        font-weight: 350;
+        color: #594a47
+    }
+
+    .container>img {
+        width: 20rem;
+    }
+
+    .bannerSobreNos>img {
+        height: 100%;
+        width: 100%;
+    }
+}
