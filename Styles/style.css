@@ -162,8 +162,8 @@ body {
 }
 
 .VIDApresentacao {
-    height: 600px;
-    width: 70vw;
+    height: 800px;
+    width: 60vw;
     /* box-shadow: 0 0 10px black; */
 }
 
@@ -573,6 +573,11 @@ body {
     padding-bottom: 5rem;
 }
 
+.mapa{
+    width: 1200px;
+    height: 800px;
+}
+
 .Localização>h2 {
     font-size: 40px;
     color: #594a47;
@@ -598,7 +603,7 @@ body {
 .Historia {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 
