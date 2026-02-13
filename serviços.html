@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,21 +17,236 @@
         href="https://fonts.googleapis.com/css2?family=Farsan&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-    <header class="Header">
+    <a class="returnTop zoom" href="#header"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="#fff" d="m4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8z"/></svg></a>
+    <header class="Header" id="header">
         <a href="index.html"><img class="LogoIMG" src="IMG/Logo/Logo.png"></a>
         <nav>
             <ul class="Menu">
-                <li class="MenuOpt"><a href="index.html">Inicio</a></li>
+                <li class="MenuOpt"><a href="index.html">Início</a></li>
                 <li class="MenuOpt"><a href="serviços.html">Serviços</a></li>
-                <li class="MenuOpt"><a href="#">Sobre Nós</a></li>
-                <li class="MenuOpt"><a href="#">Contate-nos</a></li>
+                <li class="MenuOpt"><a href="contatos.html">Contate-nos</a></li>
+                <li class="MenuOpt"><a href="sobrenos.html">Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
     <section class="">
-        <h1>Esta é a pagina de serviços</h1>
+        <div class="BannerServiços">
+            <div class="BannerInfoServiços fade-in" style="text-align: right;">
+                <div class="BannerTextServiços" style="text-align: right;">
+                    <h1 class="BannerItemServiços">Infraestrutura, Tecnologia e Confiança Para Valorizar Sua Produção
+                    </h2>
+                    <p>Soluções completas em armazenagem, beneficiamento e logística, garantindo qualidade, segurança e
+                        eficiência em cada etapa do processo.</p>
+                </div>
+                <a class="BannerBTNServiços" href="#primeiroServico">Confira</a>
+            </div>
+        </div>
     </section>
-    
+
+    <section style="padding: 2rem 0;">
+        <div class="alinhamentoDireito">
+            <div class="CardServico hidden">
+                <img src="IMG/ImgServicos/ImgArmazenagem.JPG" class="imgCard">
+                <div class="SevDescricao" id="primeiroServico">
+                    <h2>Armazenamento</h2>
+                    <p>
+                        Oferecemos serviços de armazenamento seguro e controlado, garantindo a conservação da qualidade
+                        dos produtos. Nossas estruturas
+                        são preparadas para proteger contra umidade, pragas e variações climáticas, assegurando total
+                        integridade durante todo o período de estocagem.
+                    </p>
+                    <a class="btnSaibaMaisServicos zoom"
+                        href="https://wa.me/5535999191441?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20serviço%20de%20Armazenamento.">Confira</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="CardServico from-left hidden">
+            <div class="SevDescricao">
+                <h2>Beneficiamento e Rebeneficiamento</h2>
+                <p>
+                    Realizamos processos completos de beneficiamento e rebeneficiamento, adequando os grãos aos padrões
+                    exigidos pelo mercado. Utilizamos equipamentos modernos para limpeza, separação e padronização,
+                    agregando valor e qualidade ao produto final.
+                </p>
+                <a class="btnSaibaMaisServicos zoom"
+                    href="https://wa.me/5535999191441?text=Olá!%20Tenho%20interesse%20no%20serviço%20de%20Beneficiamento%20e%20Rebeneficiamento%20de%20grãos.">Confira</a>
+            </div>
+            <img src="IMG/ImgServicos/Beneficiamento.JPG" class="imgCard">
+        </div>
+
+        <div class="alinhamentoDireito">
+            <div class="CardServico from-right hidden">
+                <img src="IMG/ImgServicos/Secagem.JPG" class="imgCard">
+                <div class="SevDescricao">
+                    <h2>Secagem</h2>
+                    <p>
+                        O serviço de secagem é realizado com rigor técnico, garantindo a redução correta da umidade dos
+                        grãos. Esse processo é essencial para preservar a qualidade, evitar perdas e manter o produto em
+                        condições ideais para armazenamento e comercialização.
+                    </p>
+                    <a class="btnSaibaMaisServicos zoom"
+                        href="https://wa.me/5535999191441?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20serviço%20de%20Secagem%20de%20grãos.">Confira</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="CardServico from-left hidden">
+            <div class="SevDescricao fade-in">
+                <h2>Balança Rodoviária</h2>
+                <p>
+                    Contamos com balança rodoviária certificada para pesagem precisa de cargas. O serviço oferece
+                    agilidade, segurança e confiabilidade, atendendo às exigências legais e facilitando o controle
+                    logístico de entrada e saída de mercadorias.
+                </p>
+                <a class="btnSaibaMaisServicos zoom"
+                    href="https://wa.me/5535999191441?text=Olá!%20Gostaria%20de%20informações%20sobre%20a%20Balança%20Rodoviária%20e%20pesagem%20de%20cargas.">Confira</a>
+            </div>
+            <img src="IMG/ImgServicos/Balança.JPG" class="imgCard">
+        </div>
+
+        <div class="alinhamentoDireito">
+            <div class="CardServico from-right hidden">
+                <img src="IMG/ImgServicos/Certificado.JPG" class="imgCard">
+                <div class="SevDescricao">
+                    <h2>Certificações para cafés especiais</h2>
+                    <p>
+                        Auxiliamos produtores e exportadores na obtenção de certificações para cafés especiais. O
+                        serviço assegura conformidade com padrões nacionais e internacionais, valorizando o produto e
+                        ampliando oportunidades em mercados exigentes.
+                    </p>
+                    <a class="btnSaibaMaisServicos zoom"
+                        href="https://wa.me/5535999191441?text=Olá!%20Tenho%20interesse%20em%20Certificações%20para%20cafés%20especiais.%20Pode%20me%20ajudar?">Confira</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="CardServico from-left hidden">
+            <div class="SevDescricao">
+                <h2>Estufagem de containers</h2>
+                <p>
+                    Realizamos a estufagem de containers com planejamento e cuidado, garantindo a correta acomodação e
+                    proteção da carga. O processo é executado seguindo normas técnicas, assegurando segurança no
+                    transporte e preservação do produto até o destino final.
+                </p>
+                <a class="btnSaibaMaisServicos zoom"
+                    href="https://wa.me/5535999191441?text=Olá!%20Gostaria%20de%20mais%20detalhes%20sobre%20o%20serviço%20de%20Estufagem%20de%20containers.">Confira</a>
+            </div>
+            <img src="IMG/ImgServicos/Container.png" class="imgCard">
+        </div>
+    </section>
+    <section class="contatenos fade-in">
+        <form action="enviar.php" method="POST" class="InpContatenos">
+            <input class="inpContato" name="name" type="text" placeholder="Nome Completo..." required>
+            <input class="inpContato" name="email" type="email" placeholder="Email..." required>
+            <input class="inpContato" name="telefone" type="tel" placeholder="Telefone" required>
+            <select class="inpContato" id="assunto" name="assunto">
+                <option value="">Assunto</option>
+                <option value="pedido">Pedido</option>
+                <option value="parceria">Parceria</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="outro">Outro</option>
+            </select>
+            <textarea maxlength="300" name="message" class="InpMensagem inpContato" required
+                placeholder="Mensagem..."></textarea>
+            <button class="btnEnviar zoom" type="submit" name="Enviar" title="Enviar" value="Enviar">Enviar</button>
+        </form>
+
+
+        <div class="containerContatenos">
+            <h2 class="Contatenos">Contate-nos</h2>
+            <div class="RedesSociais">
+                <div class="Rede">
+                    <p><a href="https://www.facebook.com/armazemnicao/?locale=pt_BR"><svg class="SocialIco"
+                                xmlns="http://www.w3.org/2000/svg" width="40" height="40"  viewBox="0 0 20 20">
+                                <path fill="currentColor"
+                                    d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m2.274 6.634h-1.443c-.171 0-.361.225-.361.524V8.6h1.805l-.273 1.486H10.47v4.461H8.767v-4.461H7.222V8.6h1.545v-.874c0-1.254.87-2.273 2.064-2.273h1.443z" />
+                            </svg><span>Armazém Nicão</span></a></p>
+                    <span>Nos acompanhe no Facebook</span>
+                </div>
+                <div class="Rede">
+                    <p>
+                        <a href="https://wa.me/5535999191441">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                            </svg>
+                            <span>
+                                (35) 99919-1441
+                            </span>
+                        </a>
+                    </p>
+                    <span>Mande-nos uma Mensagem</span>
+                </div>
+                <div class="Rede">
+                    <p><a href="https://www.instagram.com/nicaocafe/"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"  viewBox="0 0 20 20">
+                                <path fill="currentColor"
+                                    d="M13 10a3 3 0 1 1-6 0q.001-.257.049-.5H6v3.997c0 .278.225.503.503.503h6.995a.503.503 0 0 0 .502-.503V9.5h-1.049q.048.243.049.5m-3 2a2 2 0 1 0-.001-4.001A2 2 0 0 0 10 12m2.4-4.1h1.199a.3.3 0 0 0 .301-.3V6.401a.3.3 0 0 0-.301-.301H12.4a.3.3 0 0 0-.301.301V7.6c.001.165.136.3.301.3M10 .4A9.6 9.6 0 0 0 .4 10a9.6 9.6 0 0 0 9.6 9.6a9.6 9.6 0 0 0 9.6-9.6A9.6 9.6 0 0 0 10 .4m5 13.489C15 14.5 14.5 15 13.889 15H6.111C5.5 15 5 14.5 5 13.889V6.111C5 5.5 5.5 5 6.111 5h7.778C14.5 5 15 5.5 15 6.111z" />
+                            </svg><span>@nicaocafe</span></a></p>
+                    <span>Encontre-nos no Instagram</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footerContent">
+            <img src="IMG/Logo/Logo (5).png">
+            <p>ARMAZENS GERAIS NICÃO IMP. EXP. LTDA</p>
+            <a href="#">Serviços</a>
+            <a href="#">Contate-nos</a>
+            <div class="SocialFooter">
+                <a href="https://www.facebook.com/armazemnicao/?locale=pt_BR" class="IconSocial"><svg class="SocialIco"
+                        xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
+                        <path fill="currentColor"
+                            d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6s9.6-4.298 9.6-9.6S15.302.4 10 .4m2.274 6.634h-1.443c-.171 0-.361.225-.361.524V8.6h1.805l-.273 1.486H10.47v4.461H8.767v-4.461H7.222V8.6h1.545v-.874c0-1.254.87-2.273 2.064-2.273h1.443z" />
+                    </svg></a>
+                <a href="https://wa.me/5535999191441" class="IconSocial"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="35" height="35" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28" />
+                    </svg></a>
+                <a href="https://www.instagram.com/nicaocafe/" class="IconSocial"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 20 20">
+                        <path fill="currentColor"
+                            d="M13 10a3 3 0 1 1-6 0q.001-.257.049-.5H6v3.997c0 .278.225.503.503.503h6.995a.503.503 0 0 0 .502-.503V9.5h-1.049q.048.243.049.5m-3 2a2 2 0 1 0-.001-4.001A2 2 0 0 0 10 12m2.4-4.1h1.199a.3.3 0 0 0 .301-.3V6.401a.3.3 0 0 0-.301-.301H12.4a.3.3 0 0 0-.301.301V7.6c.001.165.136.3.301.3M10 .4A9.6 9.6 0 0 0 .4 10a9.6 9.6 0 0 0 9.6 9.6a9.6 9.6 0 0 0 9.6-9.6A9.6 9.6 0 0 0 10 .4m5 13.489C15 14.5 14.5 15 13.889 15H6.111C5.5 15 5 14.5 5 13.889V6.111C5 5.5 5.5 5 6.111 5h7.778C14.5 5 15 5.5 15 6.111z" />
+                    </svg></a>
+            </div>
+            <p>Todos os direitos reservados©</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".CardServico");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                        entry.target.classList.remove("hidden");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            cards.forEach(card => observer.observe(card));
+        });
+
+        const elements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        elements.forEach(el => observer.observe(el));
+    </script>
 </body>
+
 </html>
