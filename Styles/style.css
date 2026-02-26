@@ -66,6 +66,17 @@ body {
     align-items: center;
 }
 
+.Linguagem{
+    transition: none;
+    padding: 0 5px -5px 5px;
+    margin: 0 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+}
+
 .MenuOpt>a {
     text-decoration: none;
     color: white;
@@ -424,7 +435,7 @@ body {
 }
 
 .CardServico {
-    width: 70%;
+    width: 90%;
     margin: 20px 0;
     display: flex;
     padding: 10px;
@@ -608,6 +619,10 @@ body {
     padding: 20px;
 }
 
+.IMGHistoria{
+    text-align: center;
+}
+
 
 .IMGHistoria>img {
     height: 400px;
@@ -622,6 +637,10 @@ body {
     text-align: justify;
     line-height: 2;
     width: 40rem;
+}
+
+.textoMobile{
+    display: none;
 }
 
 .BoxSobreNos {
@@ -773,6 +792,7 @@ body {
         list-style: none;
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     .MenuOpt {
@@ -1164,7 +1184,7 @@ body {
         width: 90%;
         margin: 20px 0;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         font-size: 10px;
         align-items: center;
         transition: opacity 0.9s ease, transform 0.9s ease;
@@ -1206,7 +1226,7 @@ body {
 
     .imgCard {
         height: auto;
-        width: 40%;
+        width: 50%;
     }
 
     /* estado inicial */
@@ -1340,8 +1360,17 @@ body {
 
     .HistoriaSobre {
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .textoMobile{
+        display: block;
+        width: 10%;
+    }
+
+    .textoDesktop{
+        display: none;
     }
 
 
@@ -1358,6 +1387,7 @@ body {
         font-size: 20px;
         text-align: center;
         line-height: 2;
+        width: auto;
     }
 
     .BoxSobreNos {
