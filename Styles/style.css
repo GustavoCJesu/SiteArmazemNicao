@@ -21,6 +21,14 @@ body {
     overflow-x: hidden;
 }
 
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
 .returnTop {
     position: fixed;
     bottom: 20px;
@@ -39,7 +47,7 @@ body {
     right: 20px;
 
     padding: 10px;
-    background-color: #c89d2f;
+    background-color: #1b5c08;
     border-radius: 100%;
     color: #fff;
 
@@ -784,46 +792,53 @@ body {
 
 @media (max-width: 800px) {
 
-    .LogoIMG {
-        height: 70px;
-        margin: 70px;
-        margin: 1rem;
-    }
+    /* Estilo do Botão Hamburguer */
+.MenuToggle {
+    background: none;
+    border: none;
+    color: #c89d2f; /* Cor dourada do seu botão English */
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
 
-    .Header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #1a1a1a;
-        position: relative;
-    }
+/* Ajuste na Navegação */
+.MenuLinks {
+    position: absolute;
+    top: 100%; /* Começa logo abaixo do header */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
-    .Menu {
-        display: flex;
-        list-style: none;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
+.Menu {
+    display: flex; /* Mudamos de none para flex */
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 0;
+    margin: 0;
 
-    .MenuOpt {
+    /* Configuração para a Animação de Slide Down */
+    max-height: 0;         /* Escondido */
+    opacity: 0;            /* Invisível */
+    overflow: hidden;      /* Garante que nada vaze */
+    transition: all 0.5s ease-in-out; /* A suavidade que você pediu */
+}
 
-        padding: 0 5px -5px 5px;
-        margin: 0 10px;
-        color: white;
-        font-weight: 500;
-        font-size: 19px;
-        display: flex;
-        align-items: center;
-    }
+/* Classe que o JavaScript vai ativar */
+.Menu.active {
+    max-height: 500px;     /* Altura suficiente para mostrar tudo */
+    opacity: 1;            /* Torna visível */
+    padding: 20px 0;
+    border-bottom: 2px solid #c89d2f;
+}
 
-    .MenuOpt>a {
-        text-decoration: none;
-        color: white;
-        font-weight: 300;
-        padding: .1rem;
-    }
+.MenuOpt {
+    margin: 15px 0;        /* Espaçamento entre as opções no celular */
+}
 
     .Banner {
         height: auto;
