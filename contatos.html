@@ -33,13 +33,24 @@
         </svg></a>
     <header class="Header" id="header">
         <a href="index.html"><img class="LogoIMG" src="IMG/Logo/Logo.png"></a>
-        <nav>
-            <ul class="Menu">
+
+        <button class="MenuToggle" id="menuToggle">
+            <i class="fa-solid fa-bars"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                    viewBox="0 0 24 24">
+                    <path fill="#fff"
+                        d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z" />
+                </svg></i>
+        </button>
+
+        <nav class="MenuLinks">
+            <ul class="Menu" id="menuList">
                 <li class="MenuOpt"><a href="index.html">Início</a></li>
                 <li class="MenuOpt"><a href="serviços.html">Serviços</a></li>
                 <li class="MenuOpt"><a href="contatos.html">Contate-nos</a></li>
                 <li class="MenuOpt"><a href="sobrenos.html">Sobre Nós</a></li>
-                <li><a class="MenuOpt" style="padding: 15px; background-color: #c89d2f; border-radius: 5px; color: white; text-decoration: none;" href="PagesEn/indexEN.html">English</a></li>
+                <li><a class="MenuOpt Linguagem"
+                        style="padding: 15px; background-color: #c89d2f; border-radius: 5px; color: white; text-decoration: none;"
+                        href="PagesEn/indexEN.html">English</a></li>
             </ul>
         </nav>
     </header>
@@ -185,6 +196,22 @@
         });
 
         elements.forEach(el => observer.observe(el));
+
+        const btn = document.getElementById('menuToggle');
+        const menu = document.getElementById('menuList');
+        const icon = btn.querySelector('i');
+
+        btn.addEventListener('click', () => {
+            // Abre e fecha o menu
+            menu.classList.toggle('active');
+
+            // Troca o ícone de barras (menu) para o X (close)
+            if (menu.classList.contains('active')) {
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            } else {
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            }
+        });
     </script>
 </body>
 
