@@ -33,6 +33,18 @@ body {
 
     z-index: 5;
 }
+.whatsBtn {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+
+    padding: 10px;
+    background-color: #c89d2f;
+    border-radius: 100%;
+    color: #fff;
+
+    z-index: 5;
+}
 
 /* Pagina Home */
 
@@ -443,7 +455,7 @@ body {
     font-size: 10px;
     align-items: center;
     transition: opacity 0.9s ease, transform 0.9s ease;
-    box-shadow: 5px 5px 10px 4px #6d6d6d;
+    background-color: #fff;
 }
 
 .SevDescricao {
