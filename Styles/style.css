@@ -227,8 +227,7 @@ body {
     background-color: #c89d2f;
     border-radius: 10px ;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 30px;
     text-decoration: none;
 }
 
@@ -833,6 +832,7 @@ body {
     cursor: pointer;
     padding: 10px;
     z-index: 1001;
+    display: block;
 }
 
 /* Ajuste na Navegação */
@@ -981,6 +981,12 @@ body {
         margin: 10px;
     }
 
+
+
+    .btnHistoria > a{
+        font-size: 20px;
+    }
+
     /* Estilo Carrossel */
 
 
@@ -992,6 +998,11 @@ body {
         margin-bottom: 20px;
         box-shadow: inset 10px 0 10px -10px rgba(0, 0, 0, .4);
         overflow: hidden;
+    }
+
+    .btnCarrosel > a{
+        font-size: 18px;
+        padding: 10px;
     }
 
     .carrosel::-webkit-scrollbar {
