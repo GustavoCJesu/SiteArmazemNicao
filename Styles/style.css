@@ -171,6 +171,7 @@ body {
 
 .Historia {
     width: 1200px;
+    height: auto;
     text-align: center;
     margin: 50px;
     display: flex;
@@ -191,6 +192,19 @@ body {
     line-height: 2;
 }
 
+.btnHistoria{
+    margin-top: 2rem;
+}
+
+.btnHistoria > a{
+    padding: 20px 20px;
+    background-color: #c89d2f;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
 .Video {
     width: 100%;
     padding-bottom: 50px;
@@ -203,6 +217,20 @@ body {
 }
 
 /* Estilo Carrossel */
+
+.btnCarrosel{
+    margin: 50px;
+}
+
+.btnCarrosel > a{
+    padding: 20px 20px;
+    background-color: #c89d2f;
+    border-radius: 10px ;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 .carrosel {
     width: 80%;
@@ -954,6 +982,7 @@ body {
     }
 
     /* Estilo Carrossel */
+
 
     .carrosel {
         width: 90%;
