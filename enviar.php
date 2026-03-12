@@ -19,8 +19,8 @@ try {
     $mail->CharSet = "UTF-8";
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'gustavocontijesuino4@gmail.com';
-    $mail->Password   = 'mccu qlmv waho rbak'; // Lembre-se de manter isso em segredo!
+    $mail->Username   = 'armazemnicaocafe@gmail.com';
+    $mail->Password   = 'yjkv upfh ybze friq'; // Lembre-se de manter isso em segredo!
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
@@ -28,9 +28,9 @@ try {
     $mail->SMTPDebug = 0; 
 
     // Destinatários
-    $mail->setFrom('gustavocontijesuino4@gmail.com', 'Site');
+    $mail->setFrom('armazemnicaocafe@gmail.com', 'Site');
     $mail->addReplyTo($email, $name);
-    $mail->addAddress('gustavocontijesuino4@gmail.com');
+    $mail->addAddress('armazemnicaocafe@gmail.com');
 
     // Conteúdo
     $mail->isHTML(true);
