@@ -35,7 +35,7 @@ try {
     // Conteúdo
     $mail->isHTML(true);
     $mail->Subject = 'Email do Site';
-    $mail->Body    = "<b>Nome:</b> $name <br> <b>E-mail:</b> $email <br> <b>Telefone:</b> $telefone <br><br> <b>Mensagem:</b><br>" . nl2br($message);
+    $mail->Body    = "<b>Nome:</b> $name <br> <b>E-mail:</b> $email <br> <b>Telefone:</b> $telefone <br> <b>Assunto: </b> $assunto <br><br> <b>Mensagem:</b><br>" . nl2br($message);
     $mail->AltBody = $message;
 
     // Envio
