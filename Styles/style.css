@@ -419,9 +419,9 @@ body {
 
 /* Pagina Home - Fim*/
 
-/* Pagina Serviços */
+/* Pagina Servicos */
 
-.BannerServiços {
+.BannerServicos {
     height: calc(100vh - 124px);
     display: flex;
     align-items: center;
@@ -435,28 +435,28 @@ body {
     box-shadow: 0 3px 5px #1a1a1a;
 }
 
-.BannerInfoServiços {
+.BannerInfoServicos {
     font-family: 'Farsan' !important;
     width: 900px;
     color: white;
 }
 
 
-.BannerTextServiços>h1 {
+.BannerTextServicos>h1 {
     font-size: 50px;
     font-weight: 300;
     margin: 20px 0;
 
 }
 
-.BannerTextServiços>p {
+.BannerTextServicos>p {
     font-size: 30px;
     font-weight: 200;
     margin: 20px 0;
     text-shadow: 0 0 10px #000;
 }
 
-.BannerBTNServiços {
+.BannerBTNServicos {
     margin: 10px 0;
     font-size: 25px !important;
     font-size: 30px;
@@ -535,7 +535,7 @@ body {
     opacity: 0;
 }
 
-/* direções */
+/* direcões */
 .CardServico.from-left.hidden {
     transform: translateX(-150px);
 }
@@ -626,7 +626,7 @@ body {
     height: 110px;
 }
 
-.Localização {
+.Localizacao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -640,7 +640,7 @@ body {
     height: 800px;
 }
 
-.Localização>h2 {
+.Localizacao>h2 {
     font-size: 40px;
     color: #594a47;
 }
@@ -805,7 +805,7 @@ body {
     height: 110px;
 }
 
-.Localização {
+.Localizacao {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -814,7 +814,7 @@ body {
     padding-bottom: 5rem;
 }
 
-.Localização>h2 {
+.Localizacao>h2 {
     font-size: 40px;
     color: #594a47;
 }
@@ -823,11 +823,11 @@ body {
 
 @media (max-width: 800px) {
 
-    /* Estilo do Botão Hamburguer */
+    /* Estilo do Botao Hamburguer */
 .MenuToggle {
     background: none;
     border: none;
-    color: #c89d2f; /* Cor dourada do seu botão English */
+    color: #c89d2f; /* Cor dourada do seu botao English */
     font-size: 30px;
     cursor: pointer;
     padding: 10px;
@@ -835,10 +835,10 @@ body {
     display: block;
 }
 
-/* Ajuste na Navegação */
+/* Ajuste na Navegacao */
 .MenuLinks {
     position: absolute;
-    top: 100%; /* Começa logo abaixo do header */
+    top: 100%; /* Comeca logo abaixo do header */
     left: 0;
     width: 100%;
     z-index: 1000;
@@ -853,7 +853,7 @@ body {
     padding: 0;
     margin: 0;
 
-    /* Configuração para a Animação de Slide Down */
+    /* Configuracao para a Animacao de Slide Down */
     max-height: 0;         /* Escondido */
     opacity: 0;            /* Invisível */
     overflow: hidden;      /* Garante que nada vaze */
@@ -869,7 +869,7 @@ body {
 }
 
 .MenuOpt {
-    margin: 15px 0;        /* Espaçamento entre as opções no celular */
+    margin: 15px 0;        /* Espacamento entre as opcões no celular */
 }
 
     .Banner {
@@ -1185,9 +1185,9 @@ body {
         color: white;
     }
 
-    /* Mobile Serviços */
+    /* Mobile Servicos */
 
-    .BannerServiços {
+    .BannerServicos {
         width: 100%;
         height: auto;
         display: flex;
@@ -1198,7 +1198,7 @@ body {
         box-shadow: 0 3px 5px #1a1a1a;
     }
 
-    .BannerInfoServiços {
+    .BannerInfoServicos {
         font-family: 'Farsan' !important;
         width: auto;
         color: white;
@@ -1209,14 +1209,14 @@ body {
     }
 
 
-    .BannerTextServiços>h1 {
+    .BannerTextServicos>h1 {
         font-size: 30px;
         font-weight: 300;
         margin: 20px 0;
         text-align: left;
     }
 
-    .BannerTextServiços>p {
+    .BannerTextServicos>p {
         font-size: 20px;
         font-weight: 200;
         margin: 20px 0;
@@ -1224,7 +1224,7 @@ body {
         text-align: start;
     }
 
-    .BannerBTNServiços {
+    .BannerBTNServicos {
         margin: 10px 0;
         font-size: 20px;
         color: white;
@@ -1305,7 +1305,7 @@ body {
         opacity: 0;
     }
 
-    /* direções */
+    /* direcões */
     .CardServico.from-left.hidden {
         transform: translateX(-150px);
     }
@@ -1394,7 +1394,7 @@ body {
         height: auto;
     }
 
-    .Localização {
+    .Localizacao {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1403,7 +1403,7 @@ body {
         padding-bottom: 5rem;
     }
 
-    .Localização>h2 {
+    .Localizacao>h2 {
         font-size: 40px;
         color: #594a47;
     }
